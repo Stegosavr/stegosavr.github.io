@@ -196,10 +196,11 @@ body *{
 .player {
     margin-top: -208px;
     #border: var(--color) 1px solid;
-    width: 817px;
-    height: 434px;
+    width: 75vw;
+    height: 42.1875vw;
     margin-left: 50vw;
     transform: translateX(-50%);
+    box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.15);
     
     iframe{
         width:100%;
@@ -212,7 +213,7 @@ body *{
         transform: translateX(-50vw);
         iframe{
             width:100vw;
-            height: 54vw;
+            height: 56.25vw;
         }
     }
 }
