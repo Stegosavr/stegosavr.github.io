@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Nunito Sans, Arial;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1250px; 
+    margin: 0 auto;
+}
+
+.button {
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    padding: 13px 33px;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-right: 20px;
+}
+
+.grey-button {
+    background: none;
+    box-shadow: none;
+    border: 1px solid;
+    border-color: white;
+}
+
+.logo {
+    color: #E3B873;
+    font-size: 11px;
+}
+
+.header {
+    background-color: black;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    height: 83px;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.header-navigation {
+    list-style: none;
+    display: flex;
+}
+
+.header-navigation__item {
+    margin-right: 47px;
+}
+
+.header-navigation__item a {
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.phone-navigation {
+    color: #E3B873;
+    font-size: 11px;
+    margin-left: 20px;
+}
+
+.hero {
+    background-image: url('images/hero.svg');
+    background-size: cover;
+    height: 707px;
+    padding-top: 194px;
+    position: relative;
+}
+
+.hero-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.hero-container {
+    position: relative; 
+    z-index: 1;
+    margin-left: 134px;
+    width: 670px;
+}
+
+.hero-description-container {
+    margin: 0px;
+    margin-top: 19px;
+    width: 504px;
+    color: white;
+    font-size: 22px;
+}
+
+.yellow-span {
+    color: #E3B873;
+}
+
+.title {
+    margin: 0;
+    font-family: Yeseva One, Times New Roman, Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px; line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.projects {
+    background-size: cover;
+    height: 1074px;
+    position: relative;
+}
+
+.background-black{
+    height: 1440px;
+    background: black;
+}
+
+.projects-container{
+    padding-top: 107px;
+    width: 1171px;
+    align-self: center;
+    
+}
+
+.projects-description{
+    width: 442px;
+    margin-right: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.apartment-description{
+    padding-top: 34px;
+    color: white;
+    font-size: 14px;
+    line-height: 26px;
+}
