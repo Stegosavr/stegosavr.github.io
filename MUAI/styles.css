@@ -1,0 +1,272 @@
+:root {
+    --bright-color: #FFFCFB;
+    --dark-color: #07070C;
+    --dark-gray-color: #16161B;
+    --gray-color:#6E727E;
+    --background-color: #FFFFFF;
+    --primary-color: #FC552F;
+    --second-primary-color: #FF9273;
+    --font: "Poppins";
+    --regular: 400;
+    --medium: 500;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font);
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--regular);
+}
+
+script{
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+}
+
+title {
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+}
+
+a{
+    color: var(--gray-color);
+    text-decoration: none;
+}
+
+p{
+    line-height: 27px;
+}
+
+h1{
+    font-weight: var(--medium);
+    font-size: 68px;
+}
+
+h2{
+    font-weight: var(--medium);
+    font-size: 58px;
+}
+
+h3{
+    font-weight: var(--medium);
+    font-size: 48px;
+}
+
+h4{
+    font-weight: var(--medium);
+    font-size: 38px;
+}
+
+h5{
+    font-weight: var(--medium);
+    font-size: 28px;
+}
+
+.b1{
+    font-weight: var(--medium);
+    font-size: 24px;
+}
+
+.b2{
+    font-weight: var(--medium);
+    font-size: 18px;
+}
+
+.p2 {
+    font-weight: var(--regular);
+    font-size: 14px;
+}
+
+.p1 {
+    font-weight: var(--regular);
+    font-size: 18px;
+}
+
+.p2 {
+    font-weight: var(--regular);
+    font-size: 14px;
+}
+
+
+button {
+    border-radius: 10px 40px 10px 40px;
+    border: 1px solid;
+    width: 16vw;
+    height: 3.5rem;
+    max-width: 194px;
+    min-width: fit-content;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
+
+.button_primary{
+    border: var(--bright-color);
+    color: var(--bright-color);
+    background-color: var(--primary-color);
+}
+
+.button_bright{
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: var(--bright-color);
+}
+
+button:hover {
+    background-color: var(--second-primary-color);
+    border: 1px solid var(--second-primary-color);
+    color: var(--bright-color);
+}
+
+.bright-text {
+    color: var(--bright-color);
+}
+
+header {
+    margin: 20px auto;
+    width: 75vw;
+
+    nav {
+        width: 100%;
+        display: flex;
+    }
+    
+    ul{
+        list-style: none;
+        display: flex;
+        width: 60%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    li {margin: 0 auto}
+    
+    .logo {
+        color: var(--primary-color);
+        font-size: 28px;
+        font-weight: var(--medium);
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: 0 auto;
+}
+
+@media (max-width: 810px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 390px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.home{
+    margin: 100px auto;
+    
+    .information{
+        width: 46.85%;
+        
+        h3 {
+            height: 3em;
+        }
+
+        p { 
+            margin-top: 20px;
+            color: var(--gray-color);
+        }
+        
+        button {
+            margin-right: 20px;
+        }
+    }
+    
+    .information > *{
+        margin-top: 40px;
+    }    
+    
+    .statistics{
+        width: 46.85%;
+        margin-left: 6.3%;
+        
+        .top-block{
+            display: flex;
+            height: 264px;
+        }
+        
+        .text-blocks{
+            width: 48.1%;
+        }
+        
+        .margin-top{
+            margin-top: 12.9px;
+        }
+        
+        .block > *{
+            width: 75%;
+        }
+        
+        .round-edge{
+            padding: 20px 10%;
+            border: 40px;
+            background-color: var(--primary-color);
+        }
+        
+        img{
+            width: 48.1%;
+            height: 100%;
+            margin-left: 1.8%;
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    .home{
+        .information{
+            width: 100%;
+        }
+    }
+}
+
+.form {
+    button { font-size: 18px }
+    
+    input{
+        width: 100%;
+        border: none;
+        background: none;
+        color: var(--bright-color);
+        font-size: 18px;
+        outline: none;
+    }
+}
+
+.round-edge{
+    padding: 55px 10%;
+    background-color: var(--dark-gray-color);
+    border-radius: 50px;
+    color: var(--bright-color);
+}
+
+.button-box{
+    display: flex;
+    border-radius: 10px 40px 10px 40px;
+    background: var(--dark-color);
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.block > *{
+    margin: 0 auto;
+}
