@@ -223,10 +223,17 @@ header {
             background-color: var(--primary-color);
         }
         
-        img{
+        .img-block{
+            display: flex;
             width: 48.1%;
             height: 100%;
+            border-radius: 40px;
             margin-left: 1.8%;
+            overflow: hidden;
+        }
+        
+        img{
+            height: 100%;
         }
     }
 }
