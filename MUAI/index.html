@@ -13,20 +13,24 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">MUAI</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="logo">MUAI</div>
+        <label for="menu"><img src="images/menu.svg"></label>
+        <input type="checkbox" id="menu">
+        <div class="menu slide">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
             <button class="button_primary b2">Get Started</button>
-        </nav>
+        </div>
     </header>
     
     <main>
-        <section class="container home">
+        <section id="home" class="container home">
             <div class="information">
                 <div class="text">
                     <h3>Simplify your work
@@ -48,6 +52,9 @@
             <div class="statistics">
                 <div class="top-block">
                     <div class="text-blocks">
+                        <div class="hidden">
+                            <div class="dot"><h4>01</h4></div>
+                        </div>
                         <div class="block round-edge">
                             <h3>200+</h3>
                             <p>User</p>
@@ -64,7 +71,7 @@
             </div>
         </section>
         
-        <section class="container reviews">
+        <section id="pricing" class="container reviews">
             <h3>why customers <span>love us</span></h3>
             <div class="grid">
                 <div class="block round-edge">
@@ -94,11 +101,111 @@
             </div>
         </section>
         
-        <section class="about">
+        <section id="about" class="about">
             <div class="round-edge container">
-                
+                <div class="block round-edge faq">
+                    <h3>FAQs Frequently Asked Questions!</h3>
+                    <p class="p1 gray">Need  Any Help? Send us a message using the form below<br> and we'll get back to you promptly!</p>
+                </div>
+                <div class="grid">
+                    <div class="drop-down round-edge">
+                        <label for="touch"><span class="pointer-span b1"><img class="plus" src="images/plus.svg">How easy is it to setup AITool?</span></label>
+                        <input type="checkbox" id="touch">
+                        <p class="slide p1">
+                            We accept various payment methods, including major credit cards (Visa, Mastercard, American Express), PayPal, and direct bank transfers. You can choose the most convenient option during the checkout process.
+                        </p>
+                    </div>
+                    <div class="drop-down round-edge">
+                        <label for="touch2"><span class="pointer-span b1"><img class="plus" src="images/plus.svg">What your refund policy?</span></label>
+                        <input type="checkbox" id="touch2">
+
+                        <p class="slide p1">
+                            We accept various payment methods, including major credit cards (Visa, Mastercard, American Express), PayPal, and direct bank transfers. You can choose the most convenient option during the checkout process.
+                        </p>
+                    </div>
+                    <div class="drop-down round-edge">
+                        <label for="touch3"><span class="pointer-span b1"><img class="plus" src="images/plus.svg">Can I integrate AITool with other platforms?</span></label>
+                        <input type="checkbox" id="touch3">
+
+                        <p class="slide p1">
+                            We accept various payment methods, including major credit cards (Visa, Mastercard, American Express), PayPal, and direct bank transfers. You can choose the most convenient option during the checkout process.
+                        </p>
+                    </div>
+                    <div class="drop-down round-edge">
+                        <label for="touch4"><span class="pointer-span b1"><img class="plus" src="images/plus.svg">Do you have corporate plans?</span></label>
+                        <input type="checkbox" id="touch4">
+
+                        <p class="slide p1">
+                            We accept various payment methods, including major credit cards (Visa, Mastercard, American Express), PayPal, and direct bank transfers. You can choose the most convenient option during the checkout process.
+                        </p>
+                    </div>
+                    <div class="drop-down round-edge">
+                        <label for="touch5"><span class="pointer-span b1"><img class="plus" src="images/plus.svg">How often do you add new content?</span></label>
+                        <input type="checkbox" id="touch5">
+
+                        <p class="slide p1">
+                            We accept various payment methods, including major credit cards (Visa, Mastercard, American Express), PayPal, and direct bank transfers. You can choose the most convenient option during the checkout process.
+                        </p>
+                    </div>
+                    <div class="drop-down round-edge">
+                        <label for="touch6"><span class="pointer-span b1"><img class="plus" src="images/plus.svg">Can I cancel my subscription at any time?</span></label>
+                        <input type="checkbox" id="touch6">
+
+                        <p class="slide p1">
+                            We accept various payment methods, including major credit cards (Visa, Mastercard, American Express), PayPal, and direct bank transfers. You can choose the most convenient option during the checkout process.
+                        </p>
+                    </div>
+                </div>
+                <div class="round-edge primary-box">
+                    <div>
+                        <p class="b1">Still need help?</p>
+                        <p>Can't find the answer here?  Message us for help!</p>
+                    </div>
+                    <button class="button_primary p1">Shoot Us A Message!</button>
+                </div>
             </div>
         </section>
+        
+        <footer id="contact">
+            <div class="container">
+                <nav>
+                    <div class="logo">MUAI</div>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="button_primary hidden"><p class="p1">Get started</p></button>
+                <div class="contacts">
+                    <div class="contact">
+                        <img src="images/location.svg">
+                        <a href="#">Java, Indonesia</a>
+                    </div>
+                    <div class="contact">
+                        <img src="images/mail.svg">
+                        <a href="#">Yourmail@mail.com</a>
+                    </div>
+                    <div class="contact">
+                        <img src="images/mail.svg">
+                        <a href="#">Your Instagram</a>
+                    </div>
+                </div>
+                <div class="form round-edge">
+                    <h5>Join to get free updates every week.</h5>
+                    <div class="button-box">
+                        <input type="email" placeholder="Email adress">
+                        <button class="button_primary">Subscribe</button>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p>©2023 MUAI</p>
+                    <p>All Rights Reserved</p>
+                    <p>Privacy Policy I Terms Of Service</p>
+                </div>
+            </div>
+        </footer>
         
     </main>
 </body>
